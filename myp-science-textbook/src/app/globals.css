@@ -753,3 +753,144 @@ tbody th {
     break-inside: avoid;
   }
 }
+
+/* Milestone 2: reading support without leaving the chapter. */
+button:focus-visible,
+summary:focus-visible {
+  outline: 3px solid #ad6b36;
+  outline-offset: 5px;
+}
+.vocabulary-term {
+  font: inherit;
+  font-weight: 600;
+  color: #28563b;
+  background: #e9f0df;
+  border: 0;
+  border-bottom: 1px dashed #557643;
+  border-radius: 3px;
+  padding: 0 3px;
+  cursor: pointer;
+  text-underline-offset: 3px;
+}
+.vocabulary-term:hover {
+  background: #dbe8cb;
+  border-bottom-style: solid;
+}
+.interaction-guide {
+  font-size: 12px;
+  line-height: 1.8;
+  color: #56664d;
+  margin: 20px 0 0;
+}
+.vocabulary-dialog {
+  position: fixed;
+  inset: 0;
+  margin: auto;
+  width: min(480px, calc(100% - 32px));
+  max-height: calc(100dvh - 48px);
+  overflow-y: auto;
+  border: 1px solid #cbd8bf;
+  border-radius: 14px;
+  background: #fffef9;
+  color: var(--ink);
+  padding: 28px;
+  box-shadow: 0 24px 80px #152c2533;
+}
+.vocabulary-dialog::backdrop {
+  background: #152c2566;
+}
+.vocabulary-dialog h2 {
+  font-family: Georgia, serif;
+  font-size: 30px;
+  font-weight: 400;
+  margin: 14px 0;
+}
+.vocabulary-dialog p {
+  font-size: 15px;
+  line-height: 1.8;
+  margin: 12px 0;
+  color: #4b5d46;
+}
+.vocabulary-example {
+  background: #eff3e7;
+  border-radius: 8px;
+  padding: 18px;
+  margin: 20px 0;
+}
+.vocabulary-example p {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+.definition-close {
+  font: inherit;
+  font-size: 14px;
+  background: var(--green);
+  color: white;
+  padding: 12px 18px;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+  min-height: 44px;
+}
+.definition-close:hover {
+  background: #234d37;
+}
+.vocabulary-dialog small {
+  display: block;
+  font-size: 11px;
+  line-height: 1.7;
+  color: #5e6c55;
+  margin-top: 16px;
+}
+.explanation {
+  border: 1px solid #d8e2cd;
+  border-radius: 8px;
+  background: #f7f9f1;
+  margin: 24px 0;
+}
+.explanation summary {
+  cursor: pointer;
+  padding: 18px 20px;
+  font-size: 14px;
+  line-height: 1.8;
+  font-weight: 600;
+  color: #36583b;
+  list-style-position: inside;
+}
+.explanation summary .eyebrow {
+  display: block;
+  margin-left: 18px;
+  margin-bottom: 4px;
+  font-size: 8px;
+}
+.explanation summary:hover {
+  background: #eef3e5;
+  border-radius: 8px;
+}
+.explanation[open] summary {
+  border-bottom: 1px solid #d8e2cd;
+}
+.explanation > div {
+  padding: 4px 20px 10px;
+}
+.reading .safety-note {
+  font-size: 12px;
+  border-left: 2px solid #b98d53;
+  padding-left: 12px;
+  color: #765b37;
+}
+@media print {
+  .vocabulary-term {
+    background: none;
+    border: 0;
+    color: inherit;
+    padding: 0;
+  }
+  .vocabulary-dialog,
+  .interaction-guide {
+    display: none;
+  }
+  .explanation {
+    break-inside: avoid;
+  }
+}

@@ -1,3 +1,5 @@
+import Vocabulary from "@/components/Vocabulary";
+
 const sections = [
   "The big idea",
   "A closer look",
@@ -178,6 +180,10 @@ export default function Home() {
                   </ul>
                 </div>
               </section>
+              <p className="interaction-guide">
+                Select an underlined science term for a definition. Open
+                “Explore further” boxes when you want a little more detail.
+              </p>
               <section id="section-1" className="reading">
                 <div className="section-label">
                   01 <span>THE BIG IDEA</span>
@@ -189,24 +195,47 @@ export default function Home() {
                   of the material has disappeared. Has it?
                 </p>
                 <p>
-                  During a chemical reaction, atoms are rearranged to form new
-                  substances. The substances we start with are called{" "}
-                  <strong>reactants</strong>. The substances formed are called{" "}
-                  <strong>products</strong>. The atoms are still there—just
-                  joined together in different ways.
+                  During a chemical reaction,{" "}
+                  <Vocabulary term="atoms">atoms</Vocabulary> are rearranged to
+                  form new substances. The substances we start with are called{" "}
+                  <Vocabulary term="reactants">reactants</Vocabulary>. The
+                  substances formed are called{" "}
+                  <Vocabulary term="products">products</Vocabulary>. The atoms
+                  are still there—just joined together in different ways.
                 </p>
                 <div className="key">
                   <span className="eyebrow">
                     THE LAW OF CONSERVATION OF MASS
                   </span>
                   <p>
-                    In a closed system, the total mass of the reactants equals
-                    the total mass of the products.
+                    In a{" "}
+                    <Vocabulary term="closedSystem">closed system</Vocabulary>,
+                    the total mass of the reactants equals the total mass of the
+                    products.
                   </p>
                   <div className="mass">
                     mass of reactants <span>=</span> mass of products
                   </div>
                 </div>
+                <details className="explanation">
+                  <summary>
+                    <span className="eyebrow">EXPLORE FURTHER</span>Is mass the
+                    same as weight?
+                  </summary>
+                  <div>
+                    <p>
+                      Mass describes how much matter an object contains and is
+                      measured in grams or kilograms. Weight is the
+                      gravitational force on an object and is measured in
+                      newtons.
+                    </p>
+                    <p>
+                      An object has the same mass on Earth and on the Moon, but
+                      its weight is smaller on the Moon because gravity is
+                      weaker there.
+                    </p>
+                  </div>
+                </details>
               </section>
               <section id="section-2" className="reading">
                 <div className="section-label">
@@ -239,6 +268,31 @@ export default function Home() {
                   measured in the container may decrease, even though the total
                   mass of the container and its surroundings is conserved.
                 </p>
+                <details className="explanation">
+                  <summary>
+                    <span className="eyebrow">EXPLORE FURTHER</span>Why can an
+                    open container seem to lose mass?
+                  </summary>
+                  <div>
+                    <p>
+                      When vinegar reacts with baking soda, carbon dioxide gas
+                      forms. In an open container, some of this gas leaves the
+                      container and mixes with the air. A balance beneath the
+                      container no longer measures that escaped gas.
+                    </p>
+                    <p>
+                      If you include the escaped gas in your measurements, the
+                      total mass before and after is the same. A closed system
+                      keeps all the matter within the boundary being measured.
+                    </p>
+                    <p className="safety-note">
+                      Safety: never seal a gas-producing reaction in a rigid
+                      container; pressure can build up. Any practical
+                      investigation needs teacher supervision and suitable
+                      equipment.
+                    </p>
+                  </div>
+                </details>
                 <aside className="think">
                   <span aria-hidden="true">?</span>
                   <div>
@@ -256,12 +310,36 @@ export default function Home() {
                 </div>
                 <h2>Make the numbers add up.</h2>
                 <p>
-                  A balanced chemical equation shows conservation of atoms. For
-                  the formation of water, we can write:
+                  A{" "}
+                  <Vocabulary term="balancedEquation">
+                    balanced chemical equation
+                  </Vocabulary>{" "}
+                  shows conservation of atoms. For the formation of water, we
+                  can write:
                 </p>
                 <div className="equation">
                   2H₂ + O₂ <span>→</span> 2H₂O
                 </div>
+                <details className="explanation">
+                  <summary>
+                    <span className="eyebrow">EXPLORE FURTHER</span>Why change
+                    the big numbers, not the small ones?
+                  </summary>
+                  <div>
+                    <p>
+                      The big number before a formula is a coefficient: it tells
+                      us how many molecules are represented. In 2H₂O, two water
+                      molecules contain four hydrogen atoms and two oxygen atoms
+                      altogether.
+                    </p>
+                    <p>
+                      The small number within a formula is a subscript. Changing
+                      H₂O to H₂O₂ would describe a different substance, hydrogen
+                      peroxide. To balance an equation, change coefficients
+                      while keeping the correct formulas.
+                    </p>
+                  </div>
+                </details>
                 <div className="table-wrap">
                   <table>
                     <caption>
@@ -315,8 +393,11 @@ export default function Home() {
                     created or destroyed.
                   </li>
                   <li>
-                    Mass is conserved. In a closed system, reactant mass equals
-                    product mass.
+                    <Vocabulary term="conservationOfMass">
+                      Conservation of mass
+                    </Vocabulary>{" "}
+                    means that in a closed system, reactant mass equals product
+                    mass.
                   </li>
                   <li>
                     An apparent change in mass may mean matter entered or left

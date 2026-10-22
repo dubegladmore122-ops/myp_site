@@ -1,4 +1,4 @@
-# MYP Science Textbook — Milestone 1
+# MYP Science Textbook — Milestone 2
 
 A student-facing Next.js App Router prototype using TypeScript and Tailwind CSS. The demonstration chapter is **Chemical Reactions → Conservation of Mass**. “Mosaic” is a temporary design name.
 
@@ -32,11 +32,13 @@ npm run start
 
 All scientific text and the original SVG illustration are demonstration material, not extracted from teacher materials. No source attribution is implied. Teacher review is required before classroom publication.
 
-Only one chapter exists. Subject/year labels describe this sample; they are not selectors. Vocabulary is plain text; clickable definitions and expandable explanations are deferred until Milestone 2 is approved. Accounts, database, editor, translation, narration, AI importing, and paid services are not included in this stage. PostgreSQL, Prisma, and Tiptap should be added when their features are implemented.
+Only one chapter exists. Subject/year labels describe this sample; they are not selectors. Six highlighted vocabulary terms open definition dialogs with examples. Three optional “Explore further” explanations expand in place. Use Tab and Enter to open definitions; Escape or “Back to reading” closes them and returns focus. Explanation headings support Enter and Space. Milestone 3 tools remain deferred. Accounts, database, editor, translation, narration, AI importing, and paid services are not included in this stage. PostgreSQL, Prisma, and Tiptap should be added when their features are implemented.
 
 ## Files
 
 - `src/app/page.tsx`: chapter content, navigation, and particle diagram.
+- `src/components/Vocabulary.tsx`: accessible definition dialogs.
+- `src/content/vocabulary.ts`: reusable demonstration definitions and examples.
 - `src/app/globals.css`: responsive styling and print styles.
 - `src/app/layout.tsx`: page title, description, and English language setting.
 
