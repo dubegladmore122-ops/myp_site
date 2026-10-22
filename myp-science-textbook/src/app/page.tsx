@@ -1,3 +1,5 @@
+import Paragraph from "@/components/Paragraph";
+import { ReadingTools } from "@/components/Reader";
 import Vocabulary from "@/components/Vocabulary";
 
 const sections = [
@@ -152,10 +154,10 @@ export default function Home() {
                 <br />
                 of mass<span>.</span>
               </h1>
-              <p className="intro">
+              <Paragraph id="p0" className="intro">
                 New substances. Same atoms. Discover what stays the same when a
                 chemical reaction changes everything else.
-              </p>
+              </Paragraph>
               <div className="demo">
                 <span aria-hidden="true">ⓘ</span>
                 <p>
@@ -164,6 +166,7 @@ export default function Home() {
                   uploaded teaching materials.
                 </p>
               </div>
+              <ReadingTools />
               <section className="objectives" aria-labelledby="learning">
                 <span className="target" aria-hidden="true">
                   ◎
@@ -189,12 +192,12 @@ export default function Home() {
                   01 <span>THE BIG IDEA</span>
                 </div>
                 <h2>Where does the mass go?</h2>
-                <p>
+                <Paragraph id="p3">
                   Imagine mixing vinegar and baking soda. Bubbles appear, the
                   mixture fizzes, and a gas forms. It might look as though some
                   of the material has disappeared. Has it?
-                </p>
-                <p>
+                </Paragraph>
+                <Paragraph id="p4">
                   During a chemical reaction,{" "}
                   <Vocabulary term="atoms">atoms</Vocabulary> are rearranged to
                   form new substances. The substances we start with are called{" "}
@@ -202,17 +205,17 @@ export default function Home() {
                   substances formed are called{" "}
                   <Vocabulary term="products">products</Vocabulary>. The atoms
                   are still there—just joined together in different ways.
-                </p>
+                </Paragraph>
                 <div className="key">
                   <span className="eyebrow">
                     THE LAW OF CONSERVATION OF MASS
                   </span>
-                  <p>
+                  <Paragraph id="p5">
                     In a{" "}
                     <Vocabulary term="closedSystem">closed system</Vocabulary>,
                     the total mass of the reactants equals the total mass of the
                     products.
-                  </p>
+                  </Paragraph>
                   <div className="mass">
                     mass of reactants <span>=</span> mass of products
                   </div>
@@ -223,17 +226,17 @@ export default function Home() {
                     same as weight?
                   </summary>
                   <div>
-                    <p>
+                    <Paragraph id="p6">
                       Mass describes how much matter an object contains and is
                       measured in grams or kilograms. Weight is the
                       gravitational force on an object and is measured in
                       newtons.
-                    </p>
-                    <p>
+                    </Paragraph>
+                    <Paragraph id="p7">
                       An object has the same mass on Earth and on the Moon, but
                       its weight is smaller on the Moon because gravity is
                       weaker there.
-                    </p>
+                    </Paragraph>
                   </div>
                 </details>
               </section>
@@ -242,12 +245,12 @@ export default function Home() {
                   02 <span>A CLOSER LOOK</span>
                 </div>
                 <h2>Same atoms. New arrangements.</h2>
-                <p>
+                <Paragraph id="p8">
                   When hydrogen reacts with oxygen to form water, the atoms
                   change partners. No atoms are created or destroyed in this
                   chemical reaction. Each kind of atom has the same count before
                   and after.
-                </p>
+                </Paragraph>
                 <figure>
                   <div className="figure-top">
                     <span>PARTICLE MODEL</span>
@@ -262,45 +265,45 @@ export default function Home() {
                   </figcaption>
                 </figure>
                 <h3>Why does a closed system matter?</h3>
-                <p>
+                <Paragraph id="p9">
                   A closed system allows no matter to enter or leave. In an open
                   container, a gas can escape into the surroundings. The mass
                   measured in the container may decrease, even though the total
                   mass of the container and its surroundings is conserved.
-                </p>
+                </Paragraph>
                 <details className="explanation">
                   <summary>
                     <span className="eyebrow">EXPLORE FURTHER</span>Why can an
                     open container seem to lose mass?
                   </summary>
                   <div>
-                    <p>
+                    <Paragraph id="p10">
                       When vinegar reacts with baking soda, carbon dioxide gas
                       forms. In an open container, some of this gas leaves the
                       container and mixes with the air. A balance beneath the
                       container no longer measures that escaped gas.
-                    </p>
-                    <p>
+                    </Paragraph>
+                    <Paragraph id="p11">
                       If you include the escaped gas in your measurements, the
                       total mass before and after is the same. A closed system
                       keeps all the matter within the boundary being measured.
-                    </p>
-                    <p className="safety-note">
+                    </Paragraph>
+                    <Paragraph id="p12" className="safety-note">
                       Safety: never seal a gas-producing reaction in a rigid
                       container; pressure can build up. Any practical
                       investigation needs teacher supervision and suitable
                       equipment.
-                    </p>
+                    </Paragraph>
                   </div>
                 </details>
                 <aside className="think">
                   <span aria-hidden="true">?</span>
                   <div>
                     <h3>Pause & think</h3>
-                    <p>
+                    <Paragraph id="p13">
                       If a reaction produces a gas, how could you collect it so
                       that it stays part of the system you weigh?
-                    </p>
+                    </Paragraph>
                   </div>
                 </aside>
               </section>
@@ -309,14 +312,14 @@ export default function Home() {
                   03 <span>COUNTING ATOMS</span>
                 </div>
                 <h2>Make the numbers add up.</h2>
-                <p>
+                <Paragraph id="p14">
                   A{" "}
                   <Vocabulary term="balancedEquation">
                     balanced chemical equation
                   </Vocabulary>{" "}
                   shows conservation of atoms. For the formation of water, we
                   can write:
-                </p>
+                </Paragraph>
                 <div className="equation">
                   2H₂ + O₂ <span>→</span> 2H₂O
                 </div>
@@ -326,18 +329,18 @@ export default function Home() {
                     the big numbers, not the small ones?
                   </summary>
                   <div>
-                    <p>
+                    <Paragraph id="p15">
                       The big number before a formula is a coefficient: it tells
                       us how many molecules are represented. In 2H₂O, two water
                       molecules contain four hydrogen atoms and two oxygen atoms
                       altogether.
-                    </p>
-                    <p>
+                    </Paragraph>
+                    <Paragraph id="p16">
                       The small number within a formula is a subscript. Changing
                       H₂O to H₂O₂ would describe a different substance, hydrogen
                       peroxide. To balance an equation, change coefficients
                       while keeping the correct formulas.
-                    </p>
+                    </Paragraph>
                   </div>
                 </details>
                 <div className="table-wrap">
@@ -369,17 +372,17 @@ export default function Home() {
                 <div className="example">
                   <span className="eyebrow">WORKED EXAMPLE</span>
                   <h3>Finding a missing mass</h3>
-                  <p>
+                  <Paragraph id="p17">
                     In a closed system, 12 g of carbon reacts completely with 32
                     g of oxygen. What mass of carbon dioxide forms?
-                  </p>
+                  </Paragraph>
                   <div className="calculation">
                     12 g + 32 g = <strong>44 g</strong>
                   </div>
-                  <p className="note">
+                  <Paragraph id="p18" className="note">
                     The total mass stays the same: 44 g of reactants produces 44
                     g of product.
-                  </p>
+                  </Paragraph>
                 </div>
               </section>
               <section id="section-4" className="reading summary">

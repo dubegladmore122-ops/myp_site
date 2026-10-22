@@ -1,3 +1,4 @@
+import { ReaderProvider } from "@/components/Reader";
 import type { Metadata } from "next";
 import "./globals.css";
 export const metadata: Metadata = {
@@ -10,7 +11,12 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <head>
+        <style>{`::highlight(spoken-word) { color: #182e16; background-color: #f0cf68; text-decoration: underline; } @media print { ::highlight(spoken-word) { background-color: transparent; } }`}</style>
+      </head>
+      <body>
+        <ReaderProvider>{children}</ReaderProvider>
+      </body>
     </html>
   );
 }
